@@ -81,7 +81,7 @@ class MainWindow(QMainWindow):
         self._register_row(self.input_csv, row, [input_csv_browse], grid)
         row += 1
 
-        self.text_column = QLineEdit("body")
+        self.text_column = QLineEdit("text")
         grid.addWidget(QLabel("Text Column"), row, 0)
         grid.addWidget(self.text_column, row, 1)
         self._register_row(self.text_column, row, [], grid)
@@ -111,7 +111,7 @@ class MainWindow(QMainWindow):
         self._register_row(self.output_dir, row, [output_dir_browse], grid)
         row += 1
 
-        self.cleaned_column = QLineEdit("cleaned_text")
+        self.cleaned_column = QLineEdit("text_cleaned")
         grid.addWidget(QLabel("Cleaned Column"), row, 0)
         grid.addWidget(self.cleaned_column, row, 1)
         self._register_row(self.cleaned_column, row, [], grid)
